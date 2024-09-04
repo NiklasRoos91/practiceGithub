@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern kodexempel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+        }
+        main {
+            margin-top: 30px;
+        }
+        article {
+            background-color: #e6e6e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        article:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kodexempel</h1>
+    </header>
+    
+    <main>
+        <article>
+            <h2>Beskrivning av kodexemplet</h2>
+            <p>Denna kodexempel demonstrerar en modern webbsida med HTML, CSS och JavaScript i en enda fil.</p>
+        </article>
+        
+        <article>
+            <h2>Komponenter:</h2>
+            <ol>
+                <li><strong>HTML:</strong> Strukturell kod för sidan</li>
+                <li><strong>CSS:</strong> Stylering av sidans utseende</li>
+                <li><strong>JavaScript:</strong> Interaktivitet och dynamiskt beteenden</li>
+            </ol>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Modern kodexempel</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Webbsidan har laddats!');
+            
+            // Exempel på JavaScript-funktionalitet
+            const button = document.createElement('button');
+            button.textContent = 'Klicka mig!';
+            button.style.backgroundColor = 'green';
+            button.style.color = 'white';
+            button.style.padding = '10px 20px';
+            
+            document.body.appendChild(button);
+            
+            button.addEventListener('click', () => {
+                alert('Tack för att du tryckte på mig!');
+            });
+        });
+    </script>
+</body>
+</html>
